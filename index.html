@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div>
+    <h1>Calculadora</h1>
+    <div class="container">
+  
+  
+      <!- display da calculadora -!>
+        <main class="display">
+          <input id="display" disabled placeholder="">
+        </main>
+  
+        <!- Botões da calculadora -!>
+          <div class="buttons">
+            <button class="row-1" onclick="C_clear(' ')"">C</button>
+            <button class="row-1" onclick="AddDisplay('*')">X</button>
+            <button class="row-1" onclick="AddDisplay('/')">/</button>
+            <button id="Del" onclick="Del_button('')" id="del">DEL</button>
+            <button onclick="AddDisplay('7')">7</button>
+            <button onclick="AddDisplay('8')"">8</button>
+            <button onclick="AddDisplay('9')"">9</button>
+            <button onclick="AddDisplay('-')"">-</button>
+            <button onclick="AddDisplay('4')"">4</button>
+            <button onclick="AddDisplay('5')"">5</button>
+            <button onclick="AddDisplay('6')"">6</button>
+            <button onclick="AddDisplay('+')"">+</button>
+            <button onclick="AddDisplay('1')"">1</button>
+            <button onclick="AddDisplay('2')"">2</button>
+            <button onclick="AddDisplay('3')"">3</button>
+            <button class="igual" onclick= "res_button()">=</button>
+            <button class="zero" onclick="AddDisplay('0')">0</button>
+            <button onclick="AddDisplay('.')">.</button>
+  
+          </div>
+    </div>
+    <footer><a href="https://github.com/Gu1nder" target="_blank">© 2026 Guilherme Lima Ricarte</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
